@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         
-        XIMI
+        XIMI hi
       </header>
     </div>
   );
