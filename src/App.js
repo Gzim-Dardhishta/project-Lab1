@@ -1,14 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Routes,NavLink} from 'react-router-dom';
+import Roles from './Roles'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <BrowserRouter>
+    <div className="App container">
+      <h3 className="d-flex justify-content-center m-3">
+        WorkType CRUD Form
+      </h3>
         
-        TEST
-      </header>
+      <nav className="navbar navbar-expand-sm bg-light navbar-dark">
+        <ul className="navbar-nav">
+          <li className="nav-item- m-1">
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/work">
+              Work
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+          </li>
+        </ul>
+      </nav>
+      <Roles />
+      
+    </div>
+    </BrowserRouter>
     </div>
   );
 }
